@@ -1,11 +1,24 @@
 # OPTM-Analysis
 
-This workflow aims to extract and identify oxidative stress induced post-translational modifications sites, peptides, and proteins as well as quantify their occupancy from high-throughput proteomics raw files. In addition, the raw and processed files will be disseminated to the public available data repository “PRIDE Archive”. 
+This workflow aims to extract and identify oxidative stress induced post-translational modifications sites, peptides, and proteins as well as quantify their occupancy from high-throughput proteomics raw files. 
 
-Specifically, this workflow is divided into 4 major operation steps using Integrated Proteomics Pipeline, R programming, Protein Information Resource, and PRIDE Archive as listed below: 
+## dtaselect_read_step1.R
+Run dtaselect_read_step1.R in the directory with the DTA files.
+Type:
+''' bash
+Rscript dtaselect_read_step1.R
+'''
 
-Step 1&2: To convert proprietary mass spectrometry result [.raw] file into [.ms1]/[.ms2] format and perform oxidative post-translational modification (O-PTM) identification using the Integrated Proteomics Pipeline (IP2). 
+## dtaselect_merge_step2.R
+Type:
+''' bash
+Rscript dtaselect_merge_step2.R mass_shift site_mass_shift output_file
+'''
 
-Step 3: To quantify O-PTM occupancy from the search result of IP2 using R programming and Protein Information Resource (PIR). Example dataset can be downloaded from https://drive.google.com/drive/folders/1f_HVhH9rhb9l1ZOesmU8CGO_lod4tQsO?usp=sharing
+## gygi_optm_calculation_step3.R
+Upload the peptides to peptidematch, and download the result-file-from-PIR.txt
+To calculate O-PTM Occupancy, type:
+''' bash
+Rscript gygi_optm_calculation_step3.R input_file multiple_peptide_match_data
+'''
 
-Step 4: To submit the raw and result files to the proteomics data repository, PRIDE Archive, using ProteomeXchange Submission Tool. 
