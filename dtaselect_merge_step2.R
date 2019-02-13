@@ -10,6 +10,11 @@ if (length(args)==0){
   mass_shift <- "\\(14\\.9632\\)"
   site_mass_shift <- "K\\(14\\.9632\\)"
   output_file <- "optm_Lys2AAA.csv"
+  # Specify the amino acid, mass shift, and output_file name 
+  # Following the same format as this example
+  #mass_shift = "\\(14\\.9632\\)"
+  #site_mass_shift = "\\K(14\\.9632\\)"
+  #output_file = "optm_Lys2AAA.csv"
 } else if (length(args)<3) {
   #if there are between 0 and 3 
   stop("Not enough arguments! Requires three arguments. 1) mass_shift, 2) site_mass_shift, 3) output_file")
@@ -22,16 +27,6 @@ if (length(args)==0){
   site_mass_shift <- args[2]
   output_file <- args[3]
 }
-
-
-mass_shift = "\\(14\\.9632\\)"
-site_mass_shift = "K\\(14\\.9632\\)"
-output_file = "optm_Lys2AAA.csv"
-# Specify the amino acid, mass shift, and output_file name 
-# Following the same format as this example
-#mass_shift = "\\(14\\.9632\\)"
-#site_mass_shift = "\\K(14\\.9632\\)"
-#output_file = "optm_Lys2AAA.csv"
 
 
 dta_files = list.files(path = ".", pattern = "_Dta.csv");
