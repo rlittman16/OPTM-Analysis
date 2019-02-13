@@ -1,6 +1,6 @@
 # OPTM-Analysis
 
-This workflow aims to extract and identify oxidative stress induced post-translational modifications sites, peptides, and proteins as well as quantify their occupancy from high-throughput proteomics raw files. 
+This workflow aims to quantify oxidative stress induced post-translational modifications sites, peptides, and proteins occupancy from high-throughput proteomics raw files. 
 
 ## dtaselect_read_step1.R
 Run dtaselect_read_step1.R in the directory with the DTA files.
