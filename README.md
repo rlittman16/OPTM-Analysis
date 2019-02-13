@@ -2,6 +2,9 @@
 
 This workflow aims to quantify oxidative stress induced post-translational modifications sites, peptides, and proteins occupancy from high-throughput proteomics raw files. 
 
+Test data can be found at:
+https://drive.google.com/drive/folders/1f_HVhH9rhb9l1ZOesmU8CGO_lod4tQsO?usp=sharing
+
 ## dtaselect_read_step1.R
 Run dtaselect_read_step1.R in the directory with the DTA files.
 Type:
