@@ -18,12 +18,12 @@ Type:
 Rscript dtaselect_merge_step2.R mass_shift site_mass_shift output_file
 ```
 
-## gygi_optm_calculation_step3.R
+## optm_calculation_step3.R
 Upload the peptides to peptidematch, and download the result-file-from-PIR.txt. <br/>
 https://research.bioinformatics.udel.edu/peptidematch/batchpeptidematch.jsp <br/>
 To calculate O-PTM Occupancy <br/>
 Type:
 ``` bash
-Rscript gygi_optm_calculation_step3.R input_file multiple_peptide_match_data
+Rscript optm_calculation_step3.R input_file multiple_peptide_match_data
 ```
 
